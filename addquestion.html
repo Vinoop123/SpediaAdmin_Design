@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Spedia || Admin</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700"
+        rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/material-vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/material.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/material-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/all.min.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/material-vertical-menu.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu material-vertical-layout 2-columns   fixed-navbar" data-open="click"
+    data-menu="vertical-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav
+        class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light bg-main navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header text-center">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-md-none mr-auto"><a
+                            class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                                class="ft-menu font-large-1"></i></a></li>
+                    <li class="nav-item width-100 side-open"><a class="navbar-brand" href="index.html"><img
+                                class="brand-logo" src="app-assets/images/logo/logo.png">
+                        </a></li>
+                    <li class="nav-item side-close"><a class="navbar-brand" href="index.html"><img class="brand-logo"
+                                src="app-assets/images/ico/favicon.png">
+                        </a></li>
+                    <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
+                            data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
+                                href="#"><i class="ft-menu"></i></a></li>
+                        <li class="dropdown nav-item mega-dropdown d-none d-lg-block"><a
+                                class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Change</a>
+                            <ul class="mega-dropdown-menu dropdown-menu row p-1">
+                                <li class="col-md-12">
+                                    <h6 class="font-weight-bold font-medium-2">Class & Subjects</h6>
+                                    <hr>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <p class="font-weight-bold">Curriculam</p>
+                                    <label><input type="radio" checked><span> Ministry of Education</span></label>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <p class="font-weight-bold">Subjects</p>
+                                    <ul class="">
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> Ministry of
+                                                    Education</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> test
+                                                    Puthiyath</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject" checked><span> IELTS
+                                                    2</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G10</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G06</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G07</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> Ministry of
+                                                    Education</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> test
+                                                    Puthiyath</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> IELTS 2</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G10</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G06</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G07</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> Ministry of
+                                                    Education</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> test
+                                                    Puthiyath</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> IELTS 2</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G10</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G06</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G07</span></label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <p class="font-weight-bold">Class</p>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="none" selected="" disabled="">Select Class</option>
+                                            <option value="Test">Test</option>
+                                            <option value="10th">10th</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <button class="btn btn-success">Confirm</button>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="nav-item"><a class="nav-link" href="#"><i
+                                    class="fas fa-university"></i><span>Ministry of Education</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-book"></i><span>IELTS
+                                    2</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i
+                                    class="fas fa-chalkboard-teacher"></i><span>10th</span></a></li>
+                        <li class="dropdown dropdown-user nav-item"><a
+                                class="dropdown-toggle nav-link dropdown-user-link" href="#"
+                                data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">John Doe</span><span
+                                    class="avatar avatar-online"><img src="app-assets/images/avatar.jpg"
+                                        alt="avatar"><i></i></span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i
+                                        class="ft-user"></i> Edit Profile</a><a class="dropdown-item" href="#"><i
+                                        class="ft-clipboard"></i> Todo</a><a class="dropdown-item" href="#"><i
+                                        class="ft-check-square"></i> Task</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i
+                                        class="ft-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="main-menu material-menu menu-fixed menu-light menu-accordion    menu-shadow "
+        data-scroll-to-active="true">
+        <div class="user-profile">
+            <div class="user-info text-center pt-1 pb-1"><img class="user-img img-fluid rounded-circle"
+                    src="app-assets/images/avatar.jpg">
+                <div class="name-wrapper d-block dropdown"><a class="white dropdown-toggle " id="user-account" href="#"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                            class="user-name">Charlie Adams</span></a>
+                    <div class="text-light">2019 - 2</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a href="#"><i class="fas fa-school"></i><span class="menu-title"
+                            data-i18n="Definitions">Definitions</span></a>
+                    <ul class="menu-content">
+                        <li class="active"><a class="menu-item" href="#"><i></i><span
+                                    data-i18n="School">School</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Subject Master">Subject
+                                    Master</span></a></li>
+                        <li><a class="menu-item" href="subject.html"><i></i><span data-i18n="Subject">Subject</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Classes">Classes</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Class Subject Map">Class Subject
+                                    Map</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Question type">Question
+                                    type</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Teacher Class Subject Map">Teacher
+                                    Class Subject Map</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="App Subject Page ShortCut">App Subject
+                                    Page ShortCut</span></a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="far fa-comment"></i><span class="menu-title"
+                            data-i18n="Chat">Chat</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Chat View">Chat View</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Assign Subject">Assign
+                                    Subject</span></a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="fas fa-medal"></i><span class="menu-title"
+                            data-i18n="Skills">Skills</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Set Skill">Set Skill</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Add Videos">Add Videos</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Link Videos">Link Videos</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Link Media">Link Media</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Set Video length">Set Video
+                                    length</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Generate thumbnail for all">Generate
+                                    thumbnail for all</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Set All Video Free">Set All Video
+                                    Free</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Unit Category Master">Unit Category
+                                    Master</span></a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="fas fa-indent"></i><span class="menu-title"
+                            data-i18n="PlayList">PlayList</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Add Playlist">Add Playlist</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-shopping-cart"></i><span class="menu-title"
+                            data-i18n="Advertisements">Advertisements</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-plane"></i><span class="menu-title"
+                            data-i18n="Move Video">Move Video</span></a>
+                </li>
+                <li class=" navigation-header"><span>Accounting Section</span><i class="la la-ellipsis-h"
+                        data-toggle="tooltip" data-placement="right" data-original-title="Accounting Section"></i>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-check-square"></i><span class="menu-title"
+                            data-i18n="ToDo">ToDo</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-briefcase"></i><span class="menu-title"
+                            data-i18n="Accounting">Accounting</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Student Discount">Student
+                                    Discount</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="View Subject Subscription">View
+                                    Subject Subscription</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Student Subject Price">Student Subject
+                                    Price</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-header row">
+            <div class="content-header-light col-12">
+                <div class="row">
+                    <div class="content-header-left col-md-12 col-12 mb-2">
+                        <h3 class="content-header-title">Add Question</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-body">
+
+                <section id="base-style">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="treeviews" id="tree1">
+                                                <li class="last"><a href="javaScript:void(0)"> Unit 1</a>
+                                                    <ul>
+                                                        <li class="last"><a href="javaScript:void(0)"> Chapter 1.1</a>
+                                                            <ul>
+                                                                <li class="last"><a href="javaScript:void(0)">
+                                                                        Lesson</a></li>
+                                                                <li class="last"><a href="javaScript:void(0)"> Intro</a>
+                                                                </li>
+                                                                <li class="last"><a href="javaScript:void(0)">
+                                                                        Summary</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="last"><a href="javaScript:void(0)"> Chapter 1.2</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="javaScript:void(0)"> Unit 2</a>
+                                                    <ul>
+                                                        <li><a href="javaScript:void(0)"> Chapter 1.1</a>
+                                                            <ul>
+                                                                <li><a href="javaScript:void(0)"> Lesson</a></li>
+                                                                <li><a href="javaScript:void(0)"> Intro</a></li>
+                                                                <li><a href="javaScript:void(0)"> Summary</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="javaScript:void(0)"> Unit 3</a></li>
+                                                <li><a href="javaScript:void(0)"> Unit 4</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-8 questionBox">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <select class="form-control">
+                                                        <option>--- Select ---</option>
+                                                        <option>Easy</option>
+                                                        <option>Normal</option>
+                                                        <option>Hard</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select class="form-control">
+                                                        <option>--- Select ---</option>
+                                                        <option>My Choice</option>
+                                                        <option>True/False</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labelsty"><input type="checkbox"> Revision
+                                                        Question</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <!-- <div class="qusetion-option">
+                                                        <h4>Options</h4>
+                                                        <div class="form-group">
+                                                            <label class="select-answer">Answer 1
+                                                                <input type="radio" name="radio">
+                                                                <span class="checktick"></span>
+                                                            </label>
+                                                            <div class="answer-show">
+                                                                <img src="assets/images/matrix1.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="select-answer">Answer 2
+                                                                <input type="radio" name="radio">
+                                                                <span class="checktick"></span>
+                                                            </label>
+                                                            <div class="answer-show">
+                                                                <img src="assets/images/matrix2.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="select-answer">Answer 3
+                                                                <input type="radio" name="radio">
+                                                                <span class="checktick"></span>
+                                                            </label>
+                                                            <div class="answer-show">
+                                                                <img src="assets/images/matrix3.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="select-answer">Answer 4
+                                                                <input type="radio" name="radio">
+                                                                <span class="checktick"></span>
+                                                            </label>
+                                                            <div class="answer-show">
+                                                                <img src="assets/images/matrix4.png">
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="qusetion-option">
+                                                        <h4>Select Correct Answer</h4>
+                                                        <div class="form-group">
+                                                            <label class="select-answer">True
+                                                                <input type="radio" name="radio">
+                                                                <span class="checktick"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="select-answer">False
+                                                                <input type="radio" name="radio">
+                                                                <span class="checktick"></span>
+                                                            </label>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <a href="javaScript:void(0)" data-toggle="modal"
+                                                        data-target="#question-popup" data-backdrop="false"> <button><i
+                                                                class="fa fa-plus"></i> Add Question</button> </a>
+                                                    <textarea rows="3"></textarea>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label><i class="fa fa-image"></i> Insert Image</label>
+                                                        <input type="file" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label><i class="fa fa-file-audio"></i> Insert Audio</label>
+                                                        <input type="file" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="questionBox questionBox2">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label><i class="fa fa-image"></i> Image</label>
+                                                            <input type="file" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label><i class="fa fa-video"></i> Video</label>
+                                                            <input type="file" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label><i class="fa fa-video"></i> Attach File</label>
+                                                            <input type="file" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <a href="javascript:void(0)">
+                                                                <h6><i class="fa fa-info-circle"></i> Add Help Here</h6>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <button><i class="fa fa-plus"></i> Add Question</button>
+                                                        <textarea rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label><input type="checkbox"> Active</label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label><input type="checkbox"> Approve</label>
+                                                </div>
+                                                <div class="col-md-8 mt-2">
+                                                    <button type="submit"
+                                                        class="btn btn-primary  waves-effect waves-light waves-input-wrapper">Save</button>
+                                                    <button type="reset"
+                                                        class="btn btn-secondary  waves-effect waves-light waves-input-wrapper">Clear</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span
+                class="float-md-right d-block d-md-inline-block">Copyright &copy; 2021 <a
+                    class="text-bold-800 grey darken-2" href="https://spediaapp.com/" target="_blank">Spedia</a></span>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+
+
+    <div class="modal fade text-left add-question-pop" id="question-popup" tabindex="-1" role="dialog"
+        aria-modal="flase">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="arabicSymbol-area">
+                        <ul class="nav nav-tabs nav-underline no-hover-bg nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tab32" aria-controls="tab32"
+                                    aria-expanded="true"><img src="assets/images/icons/tdSR.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab33" aria-controls="tab33"
+                                    aria-expanded="false"><img src="assets/images/icons/tdArrow.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab34" aria-controls="tab34"><img
+                                        src="assets/images/icons/tdMatrix.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab35" aria-controls="tab35"><img
+                                        src="assets/images/icons/tdPower.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab36" aria-controls="tab36"><img
+                                        src="assets/images/icons/tdBar.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab37" aria-controls="tab37"><img
+                                        src="assets/images/icons/tdSigma.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab38" aria-controls="tab38">Grade 11</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab39" aria-controls="tab39">Grade 12</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab40" aria-controls="tab40">Grade 10</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab41" aria-controls="tab41">En Roots</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab42" aria-controls="tab42"><img
+                                        src="assets/images/icons/English.png"></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="tab32" aria-labelledby="tab32"
+                                aria-expanded="true">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                </div>
+                                <div class="questionTyping">
+                                    <textarea rows="5"></textarea>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"> asdhjgwerrew</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab33" role="tabpanel" aria-labelledby="tab33"
+                                aria-expanded="false">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"> asdhjgwerrew</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab34" role="tabpanel" aria-labelledby="tab34"
+                                aria-expanded="false">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"> asdhjgwerrew</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab35" aria-labelledby="tab35" aria-expanded="true">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"> asdhjgwerrew</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab36" aria-labelledby="tab36" aria-expanded="true">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"> asdhjgwerrew</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab37" aria-labelledby="tab37" aria-expanded="true">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"> asdhjgwerrew</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab38" aria-labelledby="tab38" aria-expanded="true">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"> asdhjgwerrew</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab39" aria-labelledby="tab39" aria-expanded="true">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab40" aria-labelledby="tab40" aria-expanded="true">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab41" aria-labelledby="tab41" aria-expanded="true">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"></div>
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limit.png"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab42" aria-labelledby="tab42" aria-expanded="true">
+                                <div class="arabicSymbol-area-box">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/English.png"></div>
+                                </div>
+                                <div class="arabicSymbol-area-output">
+                                    <div class="areaSymbolQuestion"><img src="assets/images/icons/limitwith_fx_gx.png"> asdhjgwerrew</div>
+                                </div>
+                            </div>
+                            <div class="arabicSymbol-button">
+                                <button>Cancel</button>
+                                <button class="btn-light">Clear</button>
+                                <button class="btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editor-mainicons">
+                        <div>
+                            <label>LTR <input type="checkbox"></label>
+                        </div>
+                        <div><button> <i class="fa fa-bold"></i></button></div>
+                        <div><button> <i class="fa fa-italic"></i></button></div>
+                        <div><button> <i class="fa fa-underline"></i></button></div>
+                        <div>
+                            <img src="assets/images/Video_Upload.png" onclick="QuestionVideoIconClicked();"
+                                title="Insert Media">
+                            <input type="file" id="fuQuestionVideo" onchange="ChangefuQuestionVideo(this)" />
+                        </div>
+                        <div>
+                            <img src="assets/images/Image_Upload.png" onclick="QuestionImageIconClicked();"
+                                title="Insert Picture">
+                            <input type="file" id="fuQuestionPicture" onchange="previewFileQuestion(this);"
+                                accept="image/gif, image/jpeg" />
+                        </div>
+                        <div>
+                            <img src="assets/images/Help_Upload.png" onclick="QuestionHelpIconClicked();"
+                                title="Attach File">
+                            <input type="file" id="fuHelpFileQuestions" onchange="ChangefuQuestionHelpFile(this)" />
+                        </div>
+                        <div>
+                            <img src="assets/images/square_root.png" id="arabicSymbol" title="Arabic Symbol">
+                        </div>
+                        <div>
+                            <img src="assets/images/arabic_num.png" id="arabicNumbers" title="Arabic Numbers">
+                        </div>
+                        <div>
+                            <img src="assets/images/pie.png" id="mathematicSymbol" title="Mathematic Symbols">
+                        </div>
+                    </div>
+                    <div class="editorTextarea">
+                        <textarea rows="3"></textarea>
+                    </div>
+                    <div class="arabicnumbers-area">
+                        <button>۰</button>
+                        <button>١</button>
+                        <button>٢</button>
+                        <button>٣</button>
+                        <button>٤</button>
+                        <button>٥</button>
+                        <button>٦</button>
+                        <button>٧</button>
+                        <button>٨</button>
+                        <button>٩</button>
+                        <button>.</button>
+                    </div>
+                    <div class="mathematic-area">
+                        <button>"</button>
+                        <button>&</button>
+                        <button>< </button>
+                                <button>></button>
+                                <button>&nbsp;</button>
+                                <button>¡</button>
+                                <button>¢</button>
+                                <button>£</button>
+                                <button>¤</button>
+                                <button>¥</button>
+                                <button>¦</button>
+                                <button>§</button>
+                                <button>¨</button>
+                                <button>©</button>
+                                <button>ª</button>
+                                <button>«</button>
+                                <button>¬</button>
+                                <button>&shy;</button>
+                                <button>®</button>
+                                <button>¯</button>
+                                <button>²</button>
+                                <button>³</button>
+                                <button>´</button>
+                                <button>µ</button>
+                                <button>¶</button>
+                                <button>·</button>
+                                <button>¸</button>
+                                <button>¹</button>
+                                <button>º</button>
+                                <button>»</button>
+                                <button>¼</button>
+                                <button>½</button>
+                                <button>¾</button>
+                                <button>¿</button>
+                                <button>×</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <i class="btn btn-secondary  waves-effect waves-light waves-input-wrapper"><input type="reset"
+                            class="waves-button-input" value="Clear"></i>
+                    <i class="btn btn-danger  waves-effect waves-light waves-input-wrapper"><input type="reset"
+                            class="waves-button-input" data-dismiss="modal" value="Cancel"></i>
+                    <i class="btn btn-primary  waves-effect waves-light waves-input-wrapper"><input type="submit"
+                            class="waves-button-input" value="OK"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="app-assets/vendors/js/material-vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+
+    <!-- BEGIN: Theme JS-->
+    <script src="app-assets/js/core/app-menu.js"></script>
+    <script src="app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        function QuestionVideoIconClicked() {
+            $('#fuQuestionVideo').click();
+        }
+        function QuestionImageIconClicked() {
+            $('#fuQuestionPicture').click();
+        }
+        function QuestionHelpIconClicked() {
+            $('#fuHelpFileQuestions').click();
+        }
+        function ShowSymbolDiv() {
+            $('#pnlArabicKeyBoard').show();
+            return false;
+        }
+        $(document).ready(function () {
+            $("#arabicNumbers").click(function () {
+                $(".arabicnumbers-area").toggle("slow");
+                $(".mathematic-area").hide();
+            });
+            $("#mathematicSymbol").click(function () {
+                $(".mathematic-area").toggle("slow");
+                $(".arabicnumbers-area").hide();
+            });
+            $("#arabicSymbol").click(function () {
+                $(".arabicSymbol-area").toggle("slow");
+            });
+        });
+    </script>
+
+</body>
+<!-- END: Body-->
+
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Spedia || Admin</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app-assets/fonts/material-icons/material-icons.css">    
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/material-vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/jquery-ui.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/material.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/material-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/all.min.css">
+    <!-- END: Theme CSS-->
+
+    <link rel="stylesheet" type="text/css" href="app-assets/css/vendors/bootstrap-treeview.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/ex-component-tree-views.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/jqueryui.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/form-validation.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/material-vertical-menu.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu material-vertical-layout 2-columns   fixed-navbar" data-open="click"
+    data-menu="vertical-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav
+        class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light bg-main navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header text-center">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-md-none mr-auto"><a
+                            class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                                class="ft-menu font-large-1"></i></a></li>
+                    <li class="nav-item width-100 side-open"><a class="navbar-brand" href="index.html"><img
+                                class="brand-logo" src="app-assets/images/logo/logo.png">
+                        </a></li>
+                    <li class="nav-item side-close"><a class="navbar-brand" href="index.html"><img class="brand-logo"
+                                src="app-assets/images/ico/favicon.png">
+                        </a></li>
+                    <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
+                            data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
+                                href="#"><i class="ft-menu"></i></a></li>
+                        <li class="dropdown nav-item mega-dropdown d-none d-lg-block"><a
+                                class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Change</a>
+                            <ul class="mega-dropdown-menu dropdown-menu row p-1">
+                                <li class="col-md-12">
+                                    <h6 class="font-weight-bold font-medium-2">Class & Subjects</h6>
+                                    <hr>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <p class="font-weight-bold">Curriculam</p>
+                                    <label><input type="radio" checked><span> Ministry of Education</span></label>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <p class="font-weight-bold">Subjects</p>
+                                    <ul class="">
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> Ministry of
+                                                    Education</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> test
+                                                    Puthiyath</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject" checked><span> IELTS
+                                                    2</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G10</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G06</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G07</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> Ministry of
+                                                    Education</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> test
+                                                    Puthiyath</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> IELTS 2</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G10</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G06</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G07</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> Ministry of
+                                                    Education</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> test
+                                                    Puthiyath</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> IELTS 2</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G10</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G06</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G07</span></label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <p class="font-weight-bold">Class</p>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="none" selected="" disabled="">Select Class</option>
+                                            <option value="Test">Test</option>
+                                            <option value="10th">10th</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <button class="btn btn-success">Confirm</button>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="nav-item"><a class="nav-link" href="#"><i
+                                    class="fas fa-university"></i><span>Ministry of Education</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-book"></i><span>IELTS
+                                    2</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i
+                                    class="fas fa-chalkboard-teacher"></i><span>10th</span></a></li>
+                        <li class="dropdown dropdown-user nav-item"><a
+                                class="dropdown-toggle nav-link dropdown-user-link" href="#"
+                                data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">John Doe</span><span
+                                    class="avatar avatar-online"><img
+                                        src="app-assets/images/avatar.jpg"
+                                        alt="avatar"><i></i></span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i
+                                        class="ft-user"></i> Edit Profile</a><a class="dropdown-item" href="#"><i
+                                        class="ft-clipboard"></i> Todo</a><a class="dropdown-item" href="#"><i
+                                        class="ft-check-square"></i> Task</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i
+                                        class="ft-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="main-menu material-menu menu-fixed menu-light menu-accordion    menu-shadow "
+        data-scroll-to-active="true">
+        <div class="user-profile">
+            <div class="user-info text-center pt-1 pb-1"><img class="user-img img-fluid rounded-circle"
+                    src="app-assets/images/avatar.jpg">
+                <div class="name-wrapper d-block dropdown"><a class="white dropdown-toggle " id="user-account"
+                        href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                            class="user-name">Charlie Adams</span></a>
+                    <div class="text-light">2019 - 2</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a href="#"><i class="fas fa-school"></i><span class="menu-title"
+                            data-i18n="Definitions">Definitions</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span
+                                    data-i18n="School">School</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Subject Master">Subject
+                                    Master</span></a></li>
+                        <li><a class="menu-item" href="subject.html"><i></i><span data-i18n="Subject">Subject</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Classes">Classes</span></a></li>
+                        <li><a class="menu-item" href="class-subject-mapping.html"><i></i><span data-i18n="Class Subject Map">Class Subject
+                                    Map</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Question type">Question
+                                    type</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Teacher Class Subject Map">Teacher
+                                    Class Subject Map</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="App Subject Page ShortCut">App Subject
+                                    Page ShortCut</span></a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="far fa-comment"></i><span class="menu-title"
+                            data-i18n="Chat">Chat</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Chat View">Chat View</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Assign Subject">Assign
+                                    Subject</span></a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="fas fa-medal"></i><span class="menu-title"
+                            data-i18n="Skills">Skills</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="skilltree.html"><i></i><span data-i18n="Set Skill">Set Skill</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Add Videos">Add Videos</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Link Videos">Link Videos</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Link Media">Link Media</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Set Video length">Set Video
+                                    length</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Generate thumbnail for all">Generate
+                                    thumbnail for all</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Set All Video Free">Set All Video
+                                    Free</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Unit Category Master">Unit Category
+                                    Master</span></a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="fas fa-indent"></i><span class="menu-title"
+                            data-i18n="PlayList">PlayList</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Add Playlist">Add Playlist</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#"><i class="la la-shopping-cart"></i><span class="menu-title"
+                            data-i18n="Advertisements">Advertisements</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-plane"></i><span class="menu-title"
+                            data-i18n="Move Video">Move Video</span></a>
+                </li>
+                <li class=" navigation-header"><span>Accounting Section</span><i class="la la-ellipsis-h"
+                        data-toggle="tooltip" data-placement="right" data-original-title="Accounting Section"></i>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-check-square"></i><span class="menu-title"
+                            data-i18n="ToDo">ToDo</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-briefcase"></i><span class="menu-title"
+                            data-i18n="Accounting">Accounting</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Student Discount">Student
+                                    Discount</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="View Subject Subscription">View
+                                    Subject Subscription</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Student Subject Price">Student Subject
+                                    Price</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-header row">
+            <div class="content-header-light col-12">
+                <div class="row">
+                    <div class="content-header-left col-md-9 col-12 mb-2">
+                        <h3 class="content-header-title">Add Subject icons & Description</h3>
+                        <div class="row breadcrumbs-top">
+                            <div class="breadcrumb-wrapper col-12">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">Subjects
+                                    </li>
+                                    <li class="breadcrumb-item active">Add Subject Icons
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-header-right col-md-3 col-12">
+                        <!-- <div class="btn-group float-md-right" role="group"
+                            aria-label="Button group with nested dropdown">
+                            <button
+                                class="btn btn-primary round dropdown-toggle dropdown-menu-right box-shadow-2 px-2 mb-1 waves-effect waves-light"
+                                id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Active</button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#"> Non Active</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-body">
+                <form id="base-style" novalidate>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Select Class</label>
+                                                <select class="form-control">
+                                                    <option>--- Select Class ---</option>
+                                                </select>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Select Subject</label>
+                                                <select class="form-control">
+                                                    <option>--- Select Subject ---</option>
+                                                </select>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button class="btn btn-warning waves-effect waves-light">Show Template</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-header pb-0 border-top5">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Title Ar</label>
+                                                <input type="text" class="form-control" placeholder="Title">
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Title En</label>
+                                                <input type="text" class="form-control" placeholder="Title">
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Description</label>
+                                                <textarea rows="2" class="form-control" placeholder="please write something..."></textarea>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-header add-icons pt-0 pb-0">
+                                    <div class="row align-items-end">
+                                        <div class="col-md-12">
+                                            <h3><strong>Add Icon</strong></h3>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label>Icons</label>
+                                                <div class="f-group">
+                                                    <select class="f-control f-dropdown" placeholder="Please choose 1">
+                                                      <option value=""> </option>
+                                                      <option value="1" data-image="http://beta.spediaapp.com/Uploads/FCKEditor/image/teacher.png"></option>
+                                                      <option value="2" data-image="http://beta.spediaapp.com/Uploads/FCKEditor/image/livetv.png"></option>
+                                                      <option value="3" data-image="http://beta.spediaapp.com/Uploads/FCKEditor/image/notes.png"></option>
+                                                      <option value="4" data-image="http://beta.spediaapp.com/Uploads/FCKEditor/image/recorded.png"></option>
+                                                      <option value="5" data-image="http://beta.spediaapp.com/Uploads/FCKEditor/image/review.png"></option>
+                                                      <option value="5" data-image="http://beta.spediaapp.com/Uploads/FCKEditor/image/time.png"></option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Icon TextAr</label>
+                                                <textarea rows="1" class="form-control"></textarea>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Icon TextEn</label>
+                                                <textarea rows="1" class="form-control"></textarea>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 text-right">
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-success  waves-effect waves-light waves-input-wrapper">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body mt-1 subjecticon-table">
+                                    <div class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="table-responsive">
+                                                    <div class="bd-example">
+                                                        <table class="table table-bordered table-responsive-lg">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Icon</th>
+                                                                    <th scope="col">Text</th>
+                                                                    <th scope="col">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><img src="http://beta.spediaapp.com/Uploads/FCKEditor/image/teacher.png"> </td>
+                                                                    <td>LIVE مع نخبة من معلمي SMARTMIND </td>
+                                                                    <td><div class="action"><a href="javaScript:void(0)"><i class="la la-trash danger"></i></a>
+                                                                    </div></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><img src="http://beta.spediaapp.com/Uploads/FCKEditor/image/livetv.png"> </td>
+                                                                    <td>إمكانية مشاهدة حصص الـ LIVE مسجلة على الموقع</td>
+                                                                    <td><div class="action"><a href="javaScript:void(0)"><i class="la la-trash danger"></i></a>
+                                                                    </div></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><img src="http://beta.spediaapp.com/Uploads/FCKEditor/image/notes.png"> </td>
+                                                                    <td>مذكرات ذكية</td>
+                                                                    <td><div class="action"><a href="javaScript:void(0)"><i class="la la-trash danger"></i></a>
+                                                                    </div></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-header pt-0">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary  waves-effect waves-light waves-input-wrapper">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span
+                class="float-md-right d-block d-md-inline-block">Copyright &copy; 2021 <a
+                    class="text-bold-800 grey darken-2" href="https://spediaapp.com/" target="_blank">Spedia</a></span>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+
+    <div class="modal fade text-left add-modals" id="edit-advertisement" tabindex="-1" role="dialog"  aria-modal="flase">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title" id="myModalLabel35">Advertisment Edit</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                            <div class="form-group">
+                                <label>Class</label>
+                                <select class="form-control" required>
+                                    <option value="">---Select Class---</option>
+                                    <option>Kuwait University</option>
+                                    <option>Harward University</option>
+                                    <option>Establishment</option>
+                                </select>
+                                <div class="help-block"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Page</label>
+                                <select class="form-control">
+                                    <option>All Page</option>
+                                    <option>Home</option>
+                                    <option>Live Course</option>
+                                    <option>Cart</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Photo</label>
+                                <div class="advertisment-thumb">
+                                    <img src="assets/images/selectgrade-4.jpg">
+                                </div>
+                                <input type="file" required>
+                                <div class="help-block"></div>
+                            </div>
+                            <div class="form-group mb-2">
+                                <fieldset>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" aria-invalid="false">
+                                        <label class="custom-control-label" for="customCheck1"> Enable</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <i class="btn btn-secondary  waves-effect waves-light waves-input-wrapper"><input type="reset" class="waves-button-input" data-dismiss="modal" value="Cancel"></i>
+                        <i class="btn btn-primary  waves-effect waves-light waves-input-wrapper" ><input type="submit" class="waves-button-input" value="Save"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="app-assets/vendors/js/material-vendors.min.js"></script>
+    <script src="app-assets/vendors/js/jqBootstrapValidation.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <script src="app-assets/js/vendors/bootstrap-treeview.min.js"></script>
+    <script src="app-assets/js/scripts/ex-component-tree-views.js"></script>
+    <script src="app-assets/js/scripts/autocomplete.js"></script>
+    <script src="app-assets/js/scripts/form-validation.js"></script>
+
+    <!-- BEGIN: Theme JS-->
+    <script src="app-assets/js/core/app-menu.js"></script>
+    <script src="app-assets/js/core/app.js"></script>
+    <script src="app-assets/js/core/jquery-ui.min.js"></script>
+    <!-- END: Theme JS-->
+
+    <script src="assets/js/scripts.js"></script>
+
+    <script type="text/javascript">
+       (function( $ ){
+  $.fn.mySelectDropdown = function(options) {    
+    return this.each(function() {  
+      var $this = $(this);
+      
+      $this.each(function () {
+        var dropdown = $("<div />").addClass("f-dropdown selectDropdown");
+        
+        if($(this).is(':disabled')) 
+          dropdown.addClass('disabled');
+
+        $(this).wrap(dropdown);
+
+        var label = $("<span />").append($("<span />")
+          .text($(this).attr("placeholder"))).insertAfter($(this));
+        var list = $("<ul />");
+
+        $(this)
+          .find("option")
+          .each(function () {
+            var image = $(this).data('image');
+            if(image) {
+              list.append($("<li />").append(
+                $("<a />").attr('data-val',$(this).val())
+                .html(
+                  $("<span />").append($(this).text())
+                ).prepend('<img src="'+image+'">')
+              ));
+            } else if($(this).val() != '') {
+              list.append($("<li />").append(
+                $("<a />").attr('data-val',$(this).val())
+                .html(
+                  $("<span />").append($(this).text())
+                )
+              ));
+            }
+          });
+
+        list.insertAfter($(this));
+
+        if ($(this).find("option:selected").length > 0 && $(this).find("option:selected").val() != '') {
+          list.find('li a[data-val="' + $(this).find("option:selected").val() + '"]').parent().addClass("active");
+          $(this).parent().addClass("filled");
+          label.html(list.find("li.active a").html());
+        }
+      });
+
+      if(!$(this).is(':disabled')) {
+        $(this).parent().on("click", "ul li a", function (e) {
+          e.preventDefault();
+          var dropdown = $(this).parent().parent().parent();
+          var active = $(this).parent().hasClass("active");
+          var label = active
+            ? $('<span />').text(dropdown.find("select").attr("placeholder"))
+            : $(this).html();
+
+          dropdown.find("option").prop("selected", false);
+          dropdown.find("ul li").removeClass("active");
+
+          dropdown.toggleClass("filled", !active);
+          dropdown.children("span").html(label);
+
+          if (!active) {
+            dropdown
+              .find('option[value="' + $(this).attr('data-val') + '"]')
+              .prop("selected", true);
+            $(this).parent().addClass("active");
+          }
+
+          dropdown.removeClass("open");
+        });
+
+        $this.parent().on("click", "> span", function (e) {
+          var self = $(this).parent();
+          self.toggleClass("open");
+        });
+
+        $(document).on("click touchstart", function (e) {
+          var dropdown = $this.parent();
+          if (dropdown !== e.target && !dropdown.has(e.target).length) {
+            dropdown.removeClass("open");
+          }
+        });
+      }
+    });
+  };
+})( jQuery );
+
+$('select.f-dropdown').mySelectDropdown();
+
+    </script>
+
+</body>
+<!-- END: Body-->
+
+</html>
