@@ -431,7 +431,10 @@ color: #fff; font-size: 16px; cursor: pointer;}
 padding: 10px; display: inline-block; position: relative; vertical-align: middle; cursor: pointer; margin-right: 5px;}
 .custome-checkbox input:checked + label:after { content: ''; display: block; position: absolute; top: 3px; left: 9px; width: 6px; height: 14px; border: solid #0db3b3;
 border-width: 0 2px 2px 0; transform: rotate(45deg);}
-
+.icon-top{position: relative;}
+.icon-top img{width: 24px; filter: invert(1) brightness(100);}
+.icon-top sup{width: 16px; height: 16px; border-radius: 50%; line-height: 16px; text-align: center; background: #005559; display: inline-block;
+right: 5px; position: absolute; top: 18px;}
 
 @media (max-width: 767px) {
   .ds-board .col{flex: 0 0 100%; max-width: 100%;}
