@@ -435,6 +435,7 @@ border-width: 0 2px 2px 0; transform: rotate(45deg);}
 .icon-top img{width: 24px; filter: invert(1) brightness(100);}
 .icon-top sup{width: 16px; height: 16px; border-radius: 50%; line-height: 16px; text-align: center; background: #005559; display: inline-block;
 right: 5px; position: absolute; top: 18px;}
+table.dataTable{min-height: 200px !important;}
 
 @media (max-width: 767px) {
   .ds-board .col{flex: 0 0 100%; max-width: 100%;}
