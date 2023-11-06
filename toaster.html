@@ -306,6 +306,29 @@
         
         <div class="content-overlay"></div>
 
+        <div class="content-wrapper">
+            <div class="content-body">
+                <section id="base-style">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card p-2">
+                                <div class="selector-btn">
+                                    <button> <span> 101</span> All </button>
+                                    <button> <span> 08</span> Not Called Subscribers </button>
+                                    <button> <span> 22</span> Susbcribed </button>
+                                    <button> <span> 56</span> Answered </button>
+                                    <button> <span> 03</span> Wrong number </button>
+                                    <button> <span> 46</span> No Answer </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
 
         <div class="content-wrapper">
             <div class="content-body">
@@ -820,6 +843,13 @@
             $("#startButton").show();
             $("#stopButton").hide();
         });
+        });
+
+        $(document).ready(function(){
+            $('.selector-btn button').click(function(){
+                $('button').removeClass("active");
+                $(this).addClass("active");
+            });
         });
 
     </script>

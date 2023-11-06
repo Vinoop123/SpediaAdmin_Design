@@ -447,6 +447,10 @@ background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0n
 .Checkbox > input:hover:checked + .Checkbox-visible {	border-color: #0ca750;}
 .Checkbox > input:focus + .Checkbox-visible {border-color: #59cb59;}
 .gp-proid table th:last-child{text-align: center;}
+.selector-btn button{background: #fff; padding: 6px 14px; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; margin: 6px;}
+.selector-btn button span{display: block; font-size: 22px; font-weight: 700; color: #0db3b3;}
+.selector-btn button:hover, .selector-btn button.active{background: rgba(12, 157, 157, 0.10); border-color: #0db3b3;}
+
 
 @media (max-width: 767px) {
   .ds-board .col{flex: 0 0 100%; max-width: 100%;}
