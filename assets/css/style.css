@@ -83,11 +83,13 @@ margin-right: 2px; line-height: 30px;text-align: center;cursor: pointer;}
 .crm-dashboard-home .form-group input[type="date"].form-control{height: 35.59px;}
 .phone-count{width: 20px; height: 20px; border-radius: 50%; line-height: 20px; padding: 0px; background: goldenrod;
 text-align: center; display: inline-block; color: #fff; cursor: pointer;}
-#callHistory .modal-dialog, #same-phone .modal-dialog{max-width: 800px;}
+#callHistory .modal-dialog, #same-phone .modal-dialog, #payment .modal-dialog{max-width: 800px;}
 #callHistory .table thead td, #callHistory .table thead th,
-#same-phone .table thead td, #same-phone .table thead th{padding: 8px; font-size: 12px;}
+#same-phone .table thead td, #same-phone .table thead th,
+#payment .table thead td, #payment .table thead th{padding: 8px; font-size: 12px;}
 #callHistory .table tbody td, #callHistory .table tbody th,
-#same-phone .table tbody td, #same-phone .table tbody th{padding: 8px; font-size: 12px; height: auto;}
+#same-phone .table tbody td, #same-phone .table tbody th,
+#payment .table tbody td, #payment .table tbody th{padding: 8px; font-size: 12px; height: auto;}
 .form-control, .custom-select, .form-control-file{padding: 0px;}
 img{max-width: 100%;}
 .video-thumb{max-width: 100px; display: block;}
@@ -450,7 +452,9 @@ background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0n
 .selector-btn button{background: #fff; padding: 6px 14px; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; margin: 6px;}
 .selector-btn button span{display: block; font-size: 22px; font-weight: 700; color: #0db3b3;}
 .selector-btn button:hover, .selector-btn button.active{background: rgba(12, 157, 157, 0.10); border-color: #0db3b3;}
-
+#payment .table tbody td{padding: 6px;}
+#payment .table tbody td:nth-child(2){ text-align: center;}
+#payment input[type=checkbox]{cursor: pointer;}
 
 @media (max-width: 767px) {
   .ds-board .col{flex: 0 0 100%; max-width: 100%;}

@@ -421,6 +421,7 @@
                                                                     <th scope="col">Lead type</th>
                                                                     <th scope="col">Phone</th>
                                                                     <th scope="col">Class</th>
+                                                                    <th scope="col"> Pay</th>
                                                                     <th scope="col">Edit</th>
                                                                     <th scope="col">Registration date</th>
                                                                 </tr>
@@ -432,6 +433,7 @@
                                                                     <td>1</td>
                                                                     <td>55155110 <span class="phone-count" data-toggle="modal" data-target="#same-phone">1</span></td>
                                                                     <td>العاشر</td>
+                                                                    <td> <a href="javascript:void(0)" data-toggle="modal" data-target="#payment"> <i class="far fa-credit-card text-danger"></i></a></td>
                                                                     <td><div class="action">
                                                                         <a href="#"><i class="la la-pencil-square success"></i></a>
                                                                     </div></td>
@@ -443,6 +445,7 @@
                                                                     <td>1</td>
                                                                     <td>55155110</td>
                                                                     <td>العاشر</td>
+                                                                    <td> <a href="javascript:void(0)" data-toggle="modal" data-target="#payment"> <i class="far fa-credit-card text-danger"></i></a></td>
                                                                     <td><div class="action">
                                                                         <a href="#"><i class="la la-pencil-square success"></i></a>
                                                                     </div></td>
@@ -563,7 +566,7 @@
     </div>
 
     <div class="modal fade text-left add-modals" id="same-phone" tabindex="-1" role="dialog" aria-modal="flase">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center">
                     <h3 class="modal-title" id="myModalLabel35"> Lead with same phone</h3>
@@ -621,6 +624,124 @@
         </div>
     </div>
 
+    <div class="modal fade text-left add-modals" id="payment" tabindex="-1" role="dialog" aria-modal="flase">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title" id="myModalLabel35"> Pay</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="row m-0 align-items-end">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label> <strong>Total Amount</strong></label>
+                                    <input type="text" class="form-control" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Payment Type</label>
+                                    <select class="form-control">
+                                        <option>TAP</option>
+                                        <option>CRM</option>
+                                        <option>Apple Pay</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label> Type</label>
+                                    <select class="form-control">
+                                        <option>Go Collect</option>
+                                        <option>G Pay</option>
+                                        <option>Credit Card</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label> Tap Reciept ID </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Notes</label>
+                                    <textarea rows="2" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="mb-1">Attachment</label>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-8 text-right">
+                                <div class="form-group">
+                                    <button class="btn btn-primary waves-effect waves-light" type="button">Pay Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="table-responsive">
+                                <div class="bd-example">
+                                    <table class="table table-bordered table-responsive-lg">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">sl</th>
+                                                <th scope="col">Select</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Mob</th>
+                                                <th scope="col">Grade</th>
+                                                <th scope="col">Subject</th>
+                                                <th scope="col">Type</th>
+                                                <th scope="col">Duration</th>
+                                                <th scope="col">Request Date</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td> <input type="checkbox"></td>
+                                                <td> Guest 2445</td>
+                                                <td> </td>
+                                                <td> Grade 6</td>
+                                                <td> Maths Module 6</td>
+                                                <td> Equation</td>
+                                                <td> 120</td>
+                                                <td> 15/11/2023</td>
+                                                <td> 20 KD</td>
+                                                <td> 12pm - 12am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td> <input type="checkbox"></td>
+                                                <td> Guest 2445</td>
+                                                <td> </td>
+                                                <td> Grade 6</td>
+                                                <td> Maths Module 6</td>
+                                                <td> Equation</td>
+                                                <td> 120</td>
+                                                <td> 15/11/2023</td>
+                                                <td> 20 KD</td>
+                                                <td> 12pm - 12am</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 
