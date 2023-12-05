@@ -11,7 +11,7 @@ body.vertical-layout.vertical-menu.menu-collapsed .navbar .side-close .navbar-br
 .curriculam input{margin-right: 5px;}
 .curriculam{margin-bottom: 15px;}
 .curriculam ul li{display: inline-block; padding-right: 20px; line-height: 30px !important;}
-.navbar-nav .nav-item i{padding-right: 5px;}
+.navbar-nav .nav-item i{padding-right: 5px; cursor: pointer;}
 .material-vertical-layout .main-menu.menu-light .user-profile {
     background: url(../images/profile-bg.jpg) center center no-repeat;
 }
@@ -435,8 +435,8 @@ padding: 10px; display: inline-block; position: relative; vertical-align: middle
 border-width: 0 2px 2px 0; transform: rotate(45deg);}
 .icon-top{position: relative;}
 .icon-top img{width: 24px; filter: invert(1) brightness(100);}
-.icon-top sup{width: 16px; height: 16px; border-radius: 50%; line-height: 16px; text-align: center; background: #005559; display: inline-block;
-right: 5px; position: absolute; top: 18px;}
+.icon-top sup{width: 22px; height: 22px; border-radius: 50%; line-height: 22px; text-align: center; background: #005559; display: inline-block;
+right: 0px; position: absolute; top: 14px; color: #fff;}
 table.dataTable{min-height: 200px !important;}
 .Checkbox {width: 20px;height: 20px;position: relative; margin: 0 auto;}
 .Checkbox > * {position: absolute; }
@@ -455,6 +455,13 @@ background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0n
 #payment .table tbody td{padding: 6px;}
 #payment .table tbody td:nth-child(2){ text-align: center;}
 #payment input[type=checkbox]{cursor: pointer;}
+.nav-tabs{position: relative; overflow: hidden;}
+.nav.nav-tabs .nav-item .nav-link.active{background: #0C9C9C; color: #fff; border-radius: 0px;}
+.subscription-assistant ul{margin: 0px !important;}
+.subscription-assistant table input{width: 100%; border: none; max-width: 100px;}
+.assistant-btn h5{display: inline-block; float: right;}
+.unSubscribe-category{text-align: center; background: aliceblue;}
+.unSubscribe-category h6{font-weight: 700; color: #000; margin: 0px;}
 
 @media (max-width: 767px) {
   .ds-board .col{flex: 0 0 100%; max-width: 100%;}
@@ -464,6 +471,18 @@ background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0n
   .timeline-box.right { left: 0%;}
   .timeline-box.left::after, .timeline-box.right::after {  left: 82px;}
   .helpcomment-Box audio, .audio-record audio{width: 100%; max-width: 200px;}
+  #navbar-mobile .navbar-nav li{display: block; width: 100%;}
+  .width-100{width: inherit !important;}
+  .material-vertical-layout .app-content .content-header .content-header-left{padding: 10px 30px; text-align: center;}
+  .material-vertical-layout .app-content .content-header .content-header-title{padding: 0px; border: none; margin: 0px;}
+  .breadcrumb-wrapper{display: none;}
+  html body .content .content-wrapper{padding: 1rem;}
+  .icon-top img{filter: none; width: 30px;}
+  .nav.nav-tabs .nav-item .nav-link{font-size: 11px;}
+  .header-navbar .navbar-container ul.nav li > a.nav-link{padding: 10px;}
+  .assistant-btn h5 span{display: none;}
+  .unSubscribe-category{text-align: left;}
+  .table thead td, .table thead th, .table tbody td, .table tbody th{padding: 5px; font-size: 12px;}
 }
 
 /* Safari */

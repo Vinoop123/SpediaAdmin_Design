@@ -183,6 +183,36 @@
                                     2</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i
                                     class="fas fa-chalkboard-teacher"></i><span>10th</span></a></li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="Subscriptions">
+                                            <img src="assets/images/icons/subscription.svg"> 
+                                            <sup> 123</sup>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="Private Request">
+                                            <img src="assets/images/icons/private-request.svg"> 
+                                            <sup> 12</sup>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="CRM Tickets">
+                                            <img src="assets/images/icons/ticket.svg"> 
+                                            <sup> 12</sup>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="CRM Reply">
+                                            <img src="assets/images/icons/reply.svg"> 
+                                            <sup> 12</sup>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="Help Desk">
+                                            <img src="assets/images/icons/helpdesk.svg"> 
+                                            <sup> 8</sup>
+                                        </a>
+                                    </li>
                         <li class="dropdown dropdown-user nav-item"><a
                                 class="dropdown-toggle nav-link dropdown-user-link" href="#"
                                 data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">John Doe</span><span
@@ -359,26 +389,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>Student</label>
-                                                <input type="text" class="form-control" required>
-                                                <div class="help-block"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>Phone</label>
-                                                <input type="number" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>Email</label>
-                                                <input type="email" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-2">
                                             <div class="form-group">
                                                 <label>Class</label>
                                                 <select class="form-control">
@@ -389,15 +400,40 @@
                                                 </select>
                                             </div>
                                         </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label>Student ID</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>Phone</label>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label>User Name</label>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
                                         <div class="col-md-12">
-                                            <div class="form-group mb-2">
+                                            <!-- <div class="form-group mb-2">
                                                 <fieldset>
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="customCheck1">
                                                         <label class="custom-control-label" for="customCheck1"> Show only own students</label>
                                                     </div>
                                                 </fieldset>
-                                            </div>
+                                            </div> -->
                                             <button type="submit" class="btn btn-primary  waves-effect waves-light waves-input-wrapper">Search</button>
                                         </div>
                                     </div>
@@ -508,6 +544,216 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="card subscription-assistant">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul class="nav nav-tabs">
+                                                <li class="nav-item ">
+                                                    <a class="nav-link assistant-tab waves-effect waves-dark active" aria-current="page" id="aUnSubscribed" >Un-subscribed</a>
+                                                </li>
+                                                <li class="nav-item assistant-tab">
+                                                    <a class="nav-link assistant-tab waves-effect waves-dark" id="aManage">Manage Subscription</a>
+                                                </li>
+                                                <li class="nav-item assistant-tab">
+                                                    <a class="nav-link assistant-tab waves-effect waves-dark" id="aSubscriptions">Subscribed</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="table-responsive">
+                                            <div class="bd-example" id="divDetailTable">
+                <table class="table table-bordered table-responsive-lg" id="tabUnS">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Currency</th>
+                            <th scope="col">Installment</th>
+                            <th scope="col">Registered<br>/TotalSeat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="8" class="unSubscribe-category"> <h6>Live Courses</h6> </td>
+                        </tr>
+                                <tr>
+                                <td scope="row">
+                                    
+                                <input type="hidden" id="hfSubjectPriceID" value="5410">    
+                                </td>
+                                <td> </td>
+                                <td>LiveCourse </td>
+                                <td><input type="text" id="txtPrice" value="80.000"> </td>
+                                <td>KD</td>
+                                <td>
+                                    <input type="hidden" id="hfActualPrice" value="80.000">
+                                    <input type="hidden" id="hfHasInstallment" value="0">
+                                    <input type="hidden" id="hfNextPayDate" value="">
+                                    <input type="hidden" id="hfInstallmentNotes" value="">
+                                    <input type="hidden" id="hfInstallmentAmount" value="">
+                                    <a><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                
+                                </td>
+                                <td>                         <span>-</span>
+                                    </td>
+                                <td>
+                                    <div class="action">
+                                        <input id="cbSelect" type="checkbox" checked> <input type="hidden" id="hfSubjectPriceID" value="5410">
+                                    </div>
+                                </td>
+                            </tr>
+                                <tr>
+                                <td scope="row">
+                                    باقة جميع المواد الفصل الثاني
+                                <input type="hidden" id="hfSubjectPriceID" value="9937">    
+                                </td>
+                                <td> </td>
+                                <td>LiveCourse </td>
+                                <td><input type="text" id="txtPrice" value="99.000"> </td>
+                                <td>KD</td>
+                                <td>
+                                    <input type="hidden" id="hfActualPrice" value="99.000">
+                                    <input type="hidden" id="hfHasInstallment" value="0">
+                                    <input type="hidden" id="hfNextPayDate" value="">
+                                    <input type="hidden" id="hfInstallmentNotes" value="">
+                                    <input type="hidden" id="hfInstallmentAmount" value="">
+                                    <a><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                
+                                </td>
+                                <td>                         <span>-</span>
+                                    </td>
+                                <td>
+                                    <div class="action">
+                                        <input id="cbSelect" type="checkbox" checked> <input type="hidden" id="hfSubjectPriceID" value="9937">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="8" class="unSubscribe-category"> <h6>Subject : Semester</h6> </td>
+                            </tr>
+                                    <tr>
+                                    <td scope="row">
+                                        English
+                                    <input type="hidden" id="hfSubjectPriceID" value="5410">    
+                                    </td>
+                                    <td> </td>
+                                    <td>Semester </td>
+                                    <td><input type="text" id="txtPrice" value="80.000"> </td>
+                                    <td>KD</td>
+                                    <td>
+                                        <input type="hidden" id="hfActualPrice" value="80.000">
+                                        <input type="hidden" id="hfHasInstallment" value="0">
+                                        <input type="hidden" id="hfNextPayDate" value="">
+                                        <input type="hidden" id="hfInstallmentNotes" value="">
+                                        <input type="hidden" id="hfInstallmentAmount" value="">
+                                        <a><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                    
+                                    </td>
+                                    <td>                         <span>-</span>
+                                        </td>
+                                    <td>
+                                        <div class="action">
+                                            <input id="cbSelect" type="checkbox"> <input type="hidden" id="hfSubjectPriceID" value="5410">
+                                        </div>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                    <td scope="row">
+                                       Bundle
+                                    <input type="hidden" id="hfSubjectPriceID" value="9937">    
+                                    </td>
+                                    <td> </td>
+                                    <td>Semester </td>
+                                    <td><input type="text" id="txtPrice" value="99.000"> </td>
+                                    <td>KD</td>
+                                    <td>
+                                        <input type="hidden" id="hfActualPrice" value="99.000">
+                                        <input type="hidden" id="hfHasInstallment" value="0">
+                                        <input type="hidden" id="hfNextPayDate" value="">
+                                        <input type="hidden" id="hfInstallmentNotes" value="">
+                                        <input type="hidden" id="hfInstallmentAmount" value="">
+                                        <a><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                    
+                                    </td>
+                                    <td>                         <span>-</span>
+                                        </td>
+                                    <td>
+                                        <div class="action">
+                                            <input id="cbSelect" type="checkbox"> <input type="hidden" id="hfSubjectPriceID" value="9937">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8" class="unSubscribe-category"> <h6>Subject : Monthly</h6> </td>
+                                </tr>
+                                        <tr>
+                                        <td scope="row">
+                                            English
+                                        <input type="hidden" id="hfSubjectPriceID" value="5410">    
+                                        </td>
+                                        <td> </td>
+                                        <td>Semester </td>
+                                        <td><input type="text" id="txtPrice" value="80.000"> </td>
+                                        <td>KD</td>
+                                        <td>
+                                            <input type="hidden" id="hfActualPrice" value="80.000">
+                                            <input type="hidden" id="hfHasInstallment" value="0">
+                                            <input type="hidden" id="hfNextPayDate" value="">
+                                            <input type="hidden" id="hfInstallmentNotes" value="">
+                                            <input type="hidden" id="hfInstallmentAmount" value="">
+                                            <a><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        
+                                        </td>
+                                        <td>                         <span>-</span>
+                                            </td>
+                                        <td>
+                                            <div class="action">
+                                                <input id="cbSelect" type="checkbox"> <input type="hidden" id="hfSubjectPriceID" value="5410">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                        <tr>
+                                        <td scope="row">
+                                           Bundle
+                                        <input type="hidden" id="hfSubjectPriceID" value="9937">    
+                                        </td>
+                                        <td> </td>
+                                        <td>Semester </td>
+                                        <td><input type="text" id="txtPrice" value="99.000"> </td>
+                                        <td>KD</td>
+                                        <td>
+                                            <input type="hidden" id="hfActualPrice" value="99.000">
+                                            <input type="hidden" id="hfHasInstallment" value="0">
+                                            <input type="hidden" id="hfNextPayDate" value="">
+                                            <input type="hidden" id="hfInstallmentNotes" value="">
+                                            <input type="hidden" id="hfInstallmentAmount" value="">
+                                            <a><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        
+                                        </td>
+                                        <td>                         <span>-</span>
+                                            </td>
+                                        <td>
+                                            <div class="action">
+                                                <input id="cbSelect" type="checkbox"> <input type="hidden" id="hfSubjectPriceID" value="9937">
+                                            </div>
+                                        </td>
+                                    </tr>
+                    </tbody>
+                </table>
+                
+                <div class="assistant-btn">
+                    <a href="#" data-toggle="modal" data-target="#PaymentTypeModal">
+                        <button class="btn btn-info waves-effect waves-light">Subscribe</button>
+                    </a>
+                    <button class="btn btn-success waves-effect waves-light"> Payment</button>
+                    <h5> <span> Total Amount :</span> <strong> 179.00 KD</strong></h5>
+                </div></div>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
