@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Spedia || Admin</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app-assets/fonts/material-icons/material-icons.css">  
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/material-vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/select2.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/material.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/material-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/all.min.css">
+    <!-- END: Theme CSS-->
+
+    <link rel="stylesheet" type="text/css" href="app-assets/css/vendors/bootstrap-treeview.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/ex-component-tree-views.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/jqueryui.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/form-validation.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/material-vertical-menu.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu material-vertical-layout 2-columns   fixed-navbar" data-open="click"
+    data-menu="vertical-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav
+        class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light bg-main navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header text-center">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-md-none mr-auto"><a
+                            class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                                class="ft-menu font-large-1"></i></a></li>
+                    <li class="nav-item width-100 side-open"><a class="navbar-brand" href="index.html"><img
+                                class="brand-logo" src="app-assets/images/logo/logo.png">
+                        </a></li>
+                    <li class="nav-item side-close"><a class="navbar-brand" href="index.html"><img class="brand-logo"
+                                src="app-assets/images/ico/favicon.png">
+                        </a></li>
+                    <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
+                            data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
+                                href="#"><i class="ft-menu"></i></a></li>
+                        <li class="dropdown nav-item mega-dropdown d-none d-lg-block"><a
+                                class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Change</a>
+                            <ul class="mega-dropdown-menu dropdown-menu row p-1">
+                                <li class="col-md-12">
+                                    <h6 class="font-weight-bold font-medium-2">Class & Subjects</h6>
+                                    <hr>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <p class="font-weight-bold">Curriculam</p>
+                                    <label><input type="radio" checked><span> Ministry of Education</span></label>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <p class="font-weight-bold">Subjects</p>
+                                    <ul class="">
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> Ministry of
+                                                    Education</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> test
+                                                    Puthiyath</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject" checked><span> IELTS
+                                                    2</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G10</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G06</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G07</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> Ministry of
+                                                    Education</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> test
+                                                    Puthiyath</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> IELTS 2</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G10</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G06</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G07</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> Ministry of
+                                                    Education</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> test
+                                                    Puthiyath</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> IELTS 2</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G10</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G06</span></label>
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" name="subject"><span> smart minds -
+                                                    G07</span></label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <p class="font-weight-bold">Class</p>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="none" selected="" disabled="">Select Class</option>
+                                            <option value="Test">Test</option>
+                                            <option value="10th">10th</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="col-md-12 curriculam">
+                                    <button class="btn btn-success">Confirm</button>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="nav-item"><a class="nav-link" href="#"><i
+                                    class="fas fa-university"></i><span>Ministry of Education</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-book"></i><span>IELTS
+                                    2</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i
+                                    class="fas fa-chalkboard-teacher"></i><span>10th</span></a></li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="Subscriptions">
+                                            <img src="assets/images/icons/subscription.svg"> 
+                                            <sup> 123</sup>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="Private Request">
+                                            <img src="assets/images/icons/private-request.svg"> 
+                                            <sup> 12</sup>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="CRM Tickets">
+                                            <img src="assets/images/icons/ticket.svg"> 
+                                            <sup> 12</sup>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="CRM Reply">
+                                            <img src="assets/images/icons/reply.svg"> 
+                                            <sup> 12</sup>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item icon-top">
+                                        <a class="nav-link" href="#" title="Help Desk">
+                                            <img src="assets/images/icons/helpdesk.svg"> 
+                                            <sup> 8</sup>
+                                        </a>
+                                    </li>
+                        <li class="dropdown dropdown-user nav-item"><a
+                                class="dropdown-toggle nav-link dropdown-user-link" href="#"
+                                data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">John Doe</span><span
+                                    class="avatar avatar-online"><img
+                                        src="app-assets/images/avatar.jpg"
+                                        alt="avatar"><i></i></span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i
+                                        class="ft-user"></i> Edit Profile</a><a class="dropdown-item" href="#"><i
+                                        class="ft-clipboard"></i> Todo</a><a class="dropdown-item" href="#"><i
+                                        class="ft-check-square"></i> Task</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i
+                                        class="ft-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="main-menu material-menu menu-fixed menu-light menu-accordion    menu-shadow "
+        data-scroll-to-active="true">
+        <div class="user-profile">
+            <div class="user-info text-center pt-1 pb-1"><img class="user-img img-fluid rounded-circle"
+                    src="app-assets/images/avatar.jpg">
+                <div class="name-wrapper d-block dropdown"><a class="white dropdown-toggle " id="user-account"
+                        href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                            class="user-name">Charlie Adams</span></a>
+                    <div class="text-light">2019 - 2</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a href="#"><i class="fas fa-school"></i><span class="menu-title"
+                            data-i18n="Definitions">Definitions</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span
+                                    data-i18n="School">School</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Subject Master">Subject
+                                    Master</span></a></li>
+                        <li><a class="menu-item" href="subject.html"><i></i><span data-i18n="Subject">Subject</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Classes">Classes</span></a></li>
+                        <li><a class="menu-item" href="class-subject-mapping.html"><i></i><span data-i18n="Class Subject Map">Class Subject
+                                    Map</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Question type">Question
+                                    type</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Teacher Class Subject Map">Teacher
+                                    Class Subject Map</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="App Subject Page ShortCut">App Subject
+                                    Page ShortCut</span></a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="far fa-comment"></i><span class="menu-title"
+                            data-i18n="Chat">Chat</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Chat View">Chat View</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Assign Subject">Assign
+                                    Subject</span></a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="fas fa-medal"></i><span class="menu-title"
+                            data-i18n="Skills">Skills</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="skilltree.html"><i></i><span data-i18n="Set Skill">Set Skill</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Add Videos">Add Videos</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Link Videos">Link Videos</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Link Media">Link Media</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Set Video length">Set Video
+                                    length</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Generate thumbnail for all">Generate
+                                    thumbnail for all</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Set All Video Free">Set All Video
+                                    Free</span></a></li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Unit Category Master">Unit Category
+                                    Master</span></a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="fas fa-indent"></i><span class="menu-title"
+                            data-i18n="PlayList">PlayList</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Add Playlist">Add Playlist</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-shopping-cart"></i><span class="menu-title"
+                            data-i18n="Advertisements">Advertisements</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-plane"></i><span class="menu-title"
+                            data-i18n="Move Video">Move Video</span></a>
+                </li>
+                <li class=" navigation-header"><span>Accounting Section</span><i class="la la-ellipsis-h"
+                        data-toggle="tooltip" data-placement="right" data-original-title="Accounting Section"></i>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-check-square"></i><span class="menu-title"
+                            data-i18n="ToDo">ToDo</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-briefcase"></i><span class="menu-title"
+                            data-i18n="Accounting">Accounting</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Student Discount">Student
+                                    Discount</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="View Subject Subscription">View
+                                    Subject Subscription</span></a>
+                        </li>
+                        <li><a class="menu-item" href="#"><i></i><span data-i18n="Student Subject Price">Student Subject
+                                    Price</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-header row">
+            <div class="content-header-light col-12">
+                <div class="row">
+                    <div class="content-header-left col-md-9 col-12 mb-2">
+                        <h3 class="content-header-title">Add Story</h3>
+                        <div class="row breadcrumbs-top">
+                            <div class="breadcrumb-wrapper col-12">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">User Management
+                                    </li>
+                                    <li class="breadcrumb-item active">Add Story
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-header-right col-md-3 col-12">
+                        <!-- <div class="btn-group float-md-right" role="group"
+                            aria-label="Button group with nested dropdown">
+                            <button
+                                class="btn btn-primary round dropdown-toggle dropdown-menu-right box-shadow-2 px-2 mb-1 waves-effect waves-light"
+                                id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Active</button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#"> Non Active</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-body">
+                <form id="base-style" novalidate>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="gradeselect2">Grades</label>
+                                                <select class="form-control" id="gradeselect2" multiple="multiple">
+                                                    <option>Grade 1</option>
+                                                    <option selected>Grade 2</option>
+                                                    <option>Grade 3</option>
+                                                    <option>Grade 4</option>
+                                                    <option>Grade 5</option>
+                                                    <option>Grade 6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label> Semester</label>
+                                                <select class="form-control">
+                                                    <option> --- Select Semester ---</option>
+                                                    <option> --- Semester 1</option>
+                                                    <option> --- Semester 2</option>
+                                                    <option> --- Semester 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <fieldset>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" name="forSubscriber" id="forSubscriber" checked>
+                                                            <label class="custom-control-label" for="forSubscriber"> For Subscriber</label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <fieldset>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" name="forGuest" id="forGuest">
+                                                            <label class="custom-control-label" for="forGuest"> For Guest</label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <fieldset>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" name="forSmartMind" id="forSmartMind" checked>
+                                                            <label class="custom-control-label" for="forSmartMind"> For SmartMind</label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="fileselect2"> File</label>
+                                                <select class="form-control" id="fileselect2" multiple="multiple">
+                                                    <option> File 1</option>
+                                                    <option selected> File 2</option>
+                                                    <option selected> File 3</option>
+                                                    <option selected> File 4</option>
+                                                    <option> File 5</option>
+                                                    <option> File 6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <ul class="file-preview">
+                                                <li> <h6> File 1</h6> <img src="app-assets/images/portfolio/portfolio-1.jpg"> </li>
+                                                <li> <h6> File 2</h6> <img src="assets/images/university-6.jpg"> </li>
+                                                <li> <h6> File 3</h6>  <img src="assets/images/training.jpg"> </li>
+                                                <li> <h6> File 4</h6> <video src="assets/images/sample1.mp4" controls></video> </li>
+                                                <li> <h6> File 5</h6> <img src="app-assets/images/portfolio/portfolio-6.jpg"> </li>
+                                            </ul>
+                                        </div>
+                                       
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn btn-primary  waves-effect waves-light waves-input-wrapper">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body mt-1">
+                                    <div class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="table-responsive">
+                                                    <div class="bd-example">
+                                                        <table class="table table-bordered table-striped jambo_table table-responsive-lg">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Sl</th>
+                                                                    <th scope="col">Class</th>
+                                                                    <th scope="col">Semester</th>
+                                                                    <th scope="col">Subscriber</th>
+                                                                    <th scope="col">SmartMind</th>
+                                                                    <th scope="col">Guest</th>
+                                                                    <th scope="col">Info</th>
+                                                                    <th scope="col">Remove</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td> 1 </td>
+                                                                    <td> Grade 2</td>
+                                                                    <td> Semester 1</td>
+                                                                    <td> <input type="checkbox" checked disabled> </td>
+                                                                    <td> <input type="checkbox" checked disabled>  </td>
+                                                                    <td> <input type="checkbox" disabled>  </td>
+                                                                    <td> <div class="action"> <a href="javascript:void(0)" data-toggle="modal" data-backdrop="false" data-target="#story-pop"> <i class="la la-info-circle success"></i></a> </div></td>
+                                                                    <td>
+                                                                        <div class="action"> <a href="javascript:void(0)"><i class="la la-trash danger"></i></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> 2 </td>
+                                                                    <td> Grade 2</td>
+                                                                    <td> Semester 1</td>
+                                                                    <td> <input type="checkbox" checked disabled> </td>
+                                                                    <td> <input type="checkbox" checked disabled>  </td>
+                                                                    <td> <input type="checkbox" disabled>  </td>
+                                                                    <td> <div class="action"> <a href="javascript:void(0)" data-toggle="modal" data-backdrop="false" data-target="#story-pop"> <i class="la la-info-circle success"></i></a> </div></td>
+                                                                    <td>
+                                                                        <div class="action"> <a href="javascript:void(0)"><i class="la la-trash danger"></i></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> 3 </td>
+                                                                    <td> Grade 2</td>
+                                                                    <td> Semester 1</td>
+                                                                    <td> <input type="checkbox" checked disabled> </td>
+                                                                    <td> <input type="checkbox" checked disabled>  </td>
+                                                                    <td> <input type="checkbox" disabled>  </td>
+                                                                    <td> <div class="action"> <a href="javascript:void(0)" data-toggle="modal" data-backdrop="false" data-target="#story-pop"> <i class="la la-info-circle success"></i></a> </div></td>
+                                                                    <td>
+                                                                        <div class="action"> <a href="javascript:void(0)"><i class="la la-trash danger"></i></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> 4 </td>
+                                                                    <td> Grade 2</td>
+                                                                    <td> Semester 1</td>
+                                                                    <td> <input type="checkbox" checked disabled> </td>
+                                                                    <td> <input type="checkbox" checked disabled>  </td>
+                                                                    <td> <input type="checkbox" disabled>  </td>
+                                                                    <td> <div class="action"> <a href="javascript:void(0)" data-toggle="modal" data-backdrop="false" data-target="#story-pop"> <i class="la la-info-circle success"></i></a> </div></td>
+                                                                    <td>
+                                                                        <div class="action"> <a href="javascript:void(0)"><i class="la la-trash danger"></i></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> 5 </td>
+                                                                    <td> Grade 2</td>
+                                                                    <td> Semester 1</td>
+                                                                    <td> <input type="checkbox" checked disabled> </td>
+                                                                    <td> <input type="checkbox" checked disabled>  </td>
+                                                                    <td> <input type="checkbox" disabled>  </td>
+                                                                    <td> <div class="action"> <a href="javascript:void(0)" data-toggle="modal" data-backdrop="false" data-target="#story-pop"> <i class="la la-info-circle success"></i></a> </div></td>
+                                                                    <td>
+                                                                        <div class="action"> <a href="javascript:void(0)"><i class="la la-trash danger"></i></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-12 col-md-5">
+                                                <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-7">
+                                               <div>
+                                                <ul class="pagination justify-content-end">
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">Prev</span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">Next</span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span
+                class="float-md-right d-block d-md-inline-block">Copyright &copy; 2021 <a
+                    class="text-bold-800 grey darken-2" href="https://spediaapp.com/" target="_blank">Spedia</a></span>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+
+    <!-- Modal -->
+    <div class="modal fade text-left" id="story-pop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel8" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary white">
+                    <h4 class="modal-title white" id="myModalLabel8"> Story Images</h4>
+                    <button type="button" class="close white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="story-image">
+                        <li class="prev2"> <img src="app-assets/images/portfolio/portfolio-6.jpg"></li>
+                        <li class="prev"> <img src="assets/images/university-6.jpg"></li>
+                        <li class="current"> <img src="assets/images/training.jpg"></li>
+                        <li class="next"> <video src="assets/images/sample1.mp4" controls muted></video> </li>
+                        <li class="next2"> <img src="app-assets/images/portfolio/portfolio-1.jpg"></li>
+                    </div>
+                    <div class="story__btn">
+                        <button class='prevBtn'> <i class="la la-chevron-left"></i></button>
+                        <button class='nextBtn'> <i class="la la-chevron-right"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="app-assets/vendors/js/material-vendors.min.js"></script>
+    <script src="app-assets/vendors/js/jqBootstrapValidation.js"></script>
+    <script src="app-assets/vendors/js/select2.full.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <script src="app-assets/js/vendors/bootstrap-treeview.min.js"></script>
+    <script src="app-assets/js/scripts/ex-component-tree-views.js"></script>
+    <script src="app-assets/js/scripts/autocomplete.js"></script>
+    <script src="app-assets/js/scripts/form-validation.js"></script>
+
+    <!-- BEGIN: Theme JS-->
+    <script src="app-assets/js/core/app-menu.js"></script>
+    <script src="app-assets/js/core/app.js"></script>
+    <script src="app-assets/js/core/jquery-ui.min.js"></script>
+    <!-- END: Theme JS-->
+
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+<!-- END: Body-->
+
+</html>

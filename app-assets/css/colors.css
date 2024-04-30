@@ -403,7 +403,7 @@ input:focus ~ .bg-primary {
   color: #666ee8 !important; }
 
 .bg-primary {
-  background-color: #666ee8 !important; }
+  background-color: #005559   !important; }
   .bg-primary .card-header,
   .bg-primary .card-footer {
     background-color: transparent; }
