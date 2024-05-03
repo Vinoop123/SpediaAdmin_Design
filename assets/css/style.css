@@ -469,8 +469,8 @@ background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0n
 .file-preview li img, .file-preview li video{width: 146px; height: 100px; object-fit: cover; display: inline-block; margin: 0 auto;}
 .file-preview li h6{font-size: 14px; text-wrap: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .story-image{position: relative; height: 500px; overflow: hidden;}
-.story-image li{list-style: none; width: 100%; height: 500px; position: absolute;  opacity: 0; transition: all .3s ease-in-out;}
-.story-image li img, .story-image li video{width: 100%; height: 100%; object-fit: cover; }
+.story-image .carousel-inner{width: 100%; height: 500px;}
+.story-image .carousel-inner img, .story-image .carousel-inner video{width: 100%; height: 100%; object-fit: cover; }
 .story-image li.prev, .story-image li.prev2 {transform: translateX(-100%);}
 .story-image li.next, .story-image li.next2 { transform: translateX(100%);}
 .story-image li.current { opacity: 1; transform: translateX(0); }

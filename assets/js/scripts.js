@@ -111,53 +111,11 @@ $(document).ready(function () {
 
 });
 
-$('document').ready(function(){
-  // next button click event
-  $('.nextBtn').click(function(){
-    // select image slides
-    let current = document.querySelector('.current'); 
-    let prev = document.querySelector('.prev'); 
-    let prev2 = document.querySelector('.prev2'); 
-    let next = document.querySelector('.next'); 
-    let next2 = document.querySelector('.next2'); 
-    // remove class 
-    $(current).removeClass('current'); 
-    $(prev).removeClass('prev'); 
-    $(prev2).removeClass('prev2'); 
-    $(next).removeClass('next'); 
-    $(next2).removeClass('next2'); 
-    
-    // add class 
-    $(current).addClass('prev'); 
-    $(prev).addClass('prev2');
-    $(prev2).addClass('next2');
-    $(next).addClass('current'); 
-    $(next2).addClass('next'); 
-  })
-  
-  // prev button click event
-  $('.prevBtn').click(function(){
-    // select image slides
-    let current = document.querySelector('.current'); 
-    let prev = document.querySelector('.prev'); 
-    let prev2 = document.querySelector('.prev2'); 
-    let next = document.querySelector('.next'); 
-    let next2 = document.querySelector('.next2'); 
-    
-    // remove class 
-    $(current).removeClass('current'); 
-    $(prev).removeClass('prev'); 
-    $(prev2).removeClass('prev2'); 
-    $(next).removeClass('next'); 
-    $(next2).removeClass('next2'); 
-    
-    // add class 
-    $(current).addClass('next'); 
-    $(prev).addClass('current'); 
-    $(prev2).addClass('prev'); 
-    $(next).addClass('next2'); 
-    $(next2).addClass('prev2'); 
-  })
+$(document).ready(function(){
+  // Event for pushed the video
+  $('#story-carousel').carousel({
+      nav:false
+  });
 });
 
 })(window);
