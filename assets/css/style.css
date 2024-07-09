@@ -477,6 +477,10 @@ background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0n
 .story__btn button{background: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; line-height: 40px; color: #0C9C9C; 
 cursor: pointer; position: absolute; top: 50%; left: 15px;}
 .story__btn button.nextBtn{right: 15px; left: auto;}
+.addQuestion-section{ background: #fdfdfd; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px;}
+#addQuestion .modal-footer button{height: 36.65px;}
+.question-preview .form-group label{display: block; color: #000; font-size: 16px; margin-bottom: 10px;}
+.question-preview .form-group button{border: 1px solid #ddd; border-radius: 4px; height: 38px; min-width: 90px; background: none; margin-right: 8px;}
 
 @media (max-width: 767px) {
   .ds-board .col{flex: 0 0 100%; max-width: 100%;}
