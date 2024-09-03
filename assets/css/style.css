@@ -481,6 +481,21 @@ cursor: pointer; position: absolute; top: 50%; left: 15px;}
 #addQuestion .modal-footer button{height: 36.65px;}
 .question-preview .form-group label{display: block; color: #000; font-size: 16px; margin-bottom: 10px;}
 .question-preview .form-group button{border: 1px solid #ddd; border-radius: 4px; height: 38px; min-width: 90px; background: none; margin-right: 8px;}
+.header-dropdown {position: relative; padding: 1.8rem 1rem; display: inline-block;}
+.header-dropdown>a {padding: 0 5px; color: #fff;}
+.header-dropdown>a:after {content: "\f078"; font-family: "Font Awesome 6 Free"; font-weight: 900; margin-left: 0.5rem; font-size: 12px;}
+.header-dropdown>a:hover{color: #fff;}
+.header-dropdown ul { position: absolute; top: -300rem; z-index: 1150; min-width: 100%; margin: 0;  background: #fff; text-align: left; list-style: none;
+box-shadow: 0 10px 30px 10px rgba(0,0,0,0.05);transition: transform 0.2s ease-out;opacity: 0;visibility: hidden;transform: translateY(-1rem); padding: 0px;}
+.header-dropdown ul a { display: block; padding:10px 7px; color: #000; white-space: nowrap}
+.header-dropdown ul a:hover { background: #0C9C9C; color: #fff;}
+.header-dropdown+.header-dropdown {  margin-left: 1.4rem}
+.header-dropdown ul li i{margin-right: 5px;}
+.header-dropdown:hover .header-menu:before,.header-dropdown:hover ul {  top: 100%;  opacity: 1;  visibility: visible;  transform: none}
+.separator { display: inline-block; height: 30px; border-left: 1px solid var(--dark); margin: 0 10px; margin-top: 8px;}
+.header-dropdown::before{content: ''; height: 100%; width: 1px; background: var(--primary-colour); position: absolute; left: -5px; top: 0px;}
+
+
 
 @media (max-width: 767px) {
   .ds-board .col{flex: 0 0 100%; max-width: 100%;}
@@ -523,6 +538,9 @@ cursor: pointer; position: absolute; top: 50%; left: 15px;}
   .subscription-assistant table figure{max-width: 45px;}
   .hide-td-MobileView{display:none}
   .table td:last-child, .table th:last-child{padding-right: 0px;}
+  .header-dropdown{display: block; padding: 10px 5px;}
+  .header-dropdown > a, .header-dropdown > a:hover{color: #000;}
+  .header-dropdown > a::after{float: right;}
 }
 
 /* Safari */

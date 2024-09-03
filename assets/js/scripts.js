@@ -116,6 +116,8 @@ $(document).ready(function(){
   $('#story-carousel').carousel({
       nav:false
   });
+ 
 });
+
 
 })(window);
