@@ -494,7 +494,7 @@ box-shadow: 0 10px 30px 10px rgba(0,0,0,0.05);transition: transform 0.2s ease-ou
 .header-dropdown:hover .header-menu:before,.header-dropdown:hover ul {  top: 100%;  opacity: 1;  visibility: visible;  transform: none}
 .separator { display: inline-block; height: 30px; border-left: 1px solid var(--dark); margin: 0 10px; margin-top: 8px;}
 .header-dropdown::before{content: ''; height: 100%; width: 1px; background: var(--primary-colour); position: absolute; left: -5px; top: 0px;}
-.helpcomment-circle{width: 15px; height: 15px; position: absolute; right: 10px; top: 10px; background: orange; border-radius: 50%;}
+.helpcomment-circle{width: 15px; height: 15px; position: absolute; right: 10px; top: 10px; border-radius: 50%;}
 .green-circle{background: green;}
 
 @media (max-width: 767px) {
