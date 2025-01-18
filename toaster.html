@@ -697,8 +697,13 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <div class="col-md-4 col-sm-4">
-                                        <button type="button" class="btn btn-lg btn-block"  data-toggle="modal" data-target="#helpdeskview-pop">Help Desk View Comment popup</button>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4">
+                                            <button type="button" class="btn btn-lg btn-block"  data-toggle="modal" data-target="#helpdeskview-pop">Help Desk View Comment popup</button>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <button type="button" class="btn btn-lg btn-block"  data-toggle="modal" data-target="#schoolMarks-pop">School Marks Popup</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -814,6 +819,150 @@
                            <video controls></video>
                         </div>
                         
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade text-left schoolMarks-pop" id="schoolMarks-pop" tabindex="-1" role="dialog"  aria-modal="flase">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title" id="myModalLabel35"> School Marks and Progress </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-3 mb-2">
+                               
+                                <label>General Percentage</label>
+                                <input aria-describedby="subject" required="" class="form-control" type="text" data-val="true" data-val-number="The field GeneralPercentage must be a number." data-val-required="The GeneralPercentage field is required." id="GeneralPercentage" name="GeneralPercentage" value="0">
+                                <span class="text-danger field-validation-valid"></span>
+            
+                        </div>
+
+                        <div class="col-md-3 mb-2">
+                           
+                            <label>Student Status</label>
+                            <select class="form-control" data-val="true" data-val-required="The StatusID field is required." id="StatusID" name="StatusID">
+                                <option value="1">Passed</option>
+                                <option value="0" selected="selected">Not Passed</option>
+                                <option value="2">Second Round</option>
+                            </select>
+                       
+                    </div>
+
+                                <div class="col-md-3 mb-2">
+                           
+                                         <label>Party Attendance</label>
+                                         <select class="form-control" data-val="true" data-val-required="The PartyAttendance field is required." id="PartyAttendance" name="PartyAttendance">
+                                             <option value="0" selected="selected">--Select--</option>
+                                             <option value="1">Accept to attend</option>
+                                             <option value="2">Not Attending</option>
+                                         </select>
+                                     
+                                 </div>
+                                 <div class="col-md-3 mb-2">
+                                    
+                                         <label>Progress</label>
+                                         <select class="form-control" data-val="true" data-val-required="The HasProgress field is required." id="HasProgress" name="HasProgress">
+                                             <option value="0" selected="selected">--Select--</option>
+                                             <option value="1">Progress</option>
+                                             <option value="2">No Progress</option>
+                                         </select>
+                              
+                                 </div>
+                                 <div class="col-md-6 mb-2">
+                                    <label for="ParentNotes">Parent Note</label>
+                                    <textarea aria-describedby="ParentNotes" class="form-control" rows="2" id="ParentNotes" name="ParentNotes"></textarea>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="AgentNotes">Agent Note</label>
+                                    <textarea aria-describedby="AgentNotes" class="form-control" rows="2" id="AgentNotes" name="AgentNotes"></textarea>
+                                </div>
+                                    <div class="col-md-12 marks">
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>رياضيات</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_0__Mark" name="Marks[0].Mark" value="0.00" fdprocessedid="6okgal">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_0__MaxMark" name="Marks[0].MaxMark" value="0.00" fdprocessedid="xe99g">
+                                                    </div>
+                                                </div>
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>فيزياء</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_1__Mark" name="Marks[1].Mark" value="0.00" fdprocessedid="xcfaw">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_1__MaxMark" name="Marks[1].MaxMark" value="0.00" fdprocessedid="agzoag">
+                                                    </div>
+                                                </div>
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>كيمياء‎‎‎‎</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_2__Mark" name="Marks[2].Mark" value="0.00" fdprocessedid="9btb1r">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_2__MaxMark" name="Marks[2].MaxMark" value="0.00" fdprocessedid="pno56">
+                                                    </div>
+                                                </div>
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>لغة إنجليزية</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_3__Mark" name="Marks[3].Mark" value="0.00" fdprocessedid="wiuhwc">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_3__MaxMark" name="Marks[3].MaxMark" value="0.00" fdprocessedid="1p1q2">
+                                                    </div>
+                                                </div>
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>أحياء</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_4__Mark" name="Marks[4].Mark" value="0.00" fdprocessedid="r9x9gt">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_4__MaxMark" name="Marks[4].MaxMark" value="0.00" fdprocessedid="dk6c">
+                                                    </div>
+                                                </div>
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>لغة عربية</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_5__Mark" name="Marks[5].Mark" value="0.00" fdprocessedid="zb9ufo">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_5__MaxMark" name="Marks[5].MaxMark" value="0.00" fdprocessedid="b6eq17">
+                                                    </div>
+                                                </div>
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>تاريخ</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_6__Mark" name="Marks[6].Mark" value="0.00" fdprocessedid="6d9hd3">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_6__MaxMark" name="Marks[6].MaxMark" value="0.00" fdprocessedid="f9yqc9">
+                                                    </div>
+                                                </div>
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>تربية الإسلامية</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_7__Mark" name="Marks[7].Mark" value="0.00" fdprocessedid="uwy5htn">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_7__MaxMark" name="Marks[7].MaxMark" value="0.00" fdprocessedid="2cwczb">
+                                                    </div>
+                                                </div>
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>حاسوب</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_8__Mark" name="Marks[8].Mark" value="0.00" fdprocessedid="798k9w">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_8__MaxMark" name="Marks[8].MaxMark" value="0.00" fdprocessedid="33ssfe">
+                                                    </div>
+                                                </div>
+                                               <div class="marks-add">
+                                                    <div class="form-group">
+                                                        <label>قرآن كريم</label>
+                                                        <input type="text" class="form-control" placeholder="Mark" data-val="true" data-val-number="The field Mark must be a number." data-val-required="The Mark field is required." id="Marks_9__Mark" name="Marks[9].Mark" value="0.00" fdprocessedid="0mhdp">
+                                                        <input type="text" class="form-control" placeholder="Max Mark" data-val="true" data-val-number="The field MaxMark must be a number." data-val-required="The MaxMark field is required." id="Marks_9__MaxMark" name="Marks[9].MaxMark" value="0.00" fdprocessedid="3ihha3">
+                                                    </div>
+                                                </div>
+                                   
+                                   </div>
+                             </div>
+                        </div>
+                        <div class="modal-footer col-12">
+                            <i class="btn btn-primary  waves-effect waves-light waves-input-wrapper"><input type="submit" class="waves-button-input" value="Save"></i>
+                            <i class="btn btn-secondary  waves-effect waves-light waves-input-wrapper"><input type="reset" class="waves-button-input" data-dismiss="modal" value="Cancel"></i>
+                        </div>
                     </div>
                 </form>
             </div>

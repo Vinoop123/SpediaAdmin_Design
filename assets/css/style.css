@@ -496,6 +496,9 @@ box-shadow: 0 10px 30px 10px rgba(0,0,0,0.05);transition: transform 0.2s ease-ou
 .header-dropdown::before{content: ''; height: 100%; width: 1px; background: var(--primary-colour); position: absolute; left: -5px; top: 0px;}
 .helpcomment-circle{width: 15px; height: 15px; position: absolute; right: 10px; top: 10px; border-radius: 50%;}
 .green-circle{background: green;}
+.schoolMarks-pop .modal-dialog{ max-width: 50rem;}
+.schoolMarks-pop .modal-content{padding: 10px;}
+.marks .marks-add{width: calc(100% / 4); border: 1px solid #ddd; padding: 12px; margin-left: -1px; margin-top: -1px;}
 
 @media (max-width: 767px) {
   .ds-board .col{flex: 0 0 100%; max-width: 100%;}
