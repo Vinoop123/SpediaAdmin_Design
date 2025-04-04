@@ -5316,7 +5316,7 @@ fieldset:disabled a.btn {
   border-right-color: #babfc7; }
 
 .custom-control {
-  display: block;
+  display: flex;
   min-height: 1.45rem;
   padding-left: 1.8rem;
   position: relative; }
